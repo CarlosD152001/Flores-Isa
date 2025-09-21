@@ -1,0 +1,153 @@
+body {
+  background: #b3fcea;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 30px;
+}
+
+.fotos {
+    align-items: center;
+    margin-bottom: -90px;
+}
+
+.fotos img {
+    border-radius: 20px;
+    border: 1px solid #243D1D;
+}
+
+.fotos1 {
+    align-items: center;
+
+}
+
+.fotos1 img {
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    border: 1px solid #243D1D;
+}
+
+
+.message {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px; 
+}
+
+.message1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-top: 18rem; 
+}
+
+.bouquet {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 150px;
+  margin-top: 7rem;
+}
+
+.flower {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.petal {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  background: yellow;
+  border-radius: 50% 50% 50% 50%;
+  top: 15px;
+  left: 35px;
+  transform-origin: 40px 75px;
+}
+
+.petal:nth-child(1) { transform: rotate(0deg); }
+.petal:nth-child(2) { transform: rotate(60deg); }
+.petal:nth-child(3) { transform: rotate(120deg); }
+.petal:nth-child(4) { transform: rotate(180deg); }
+.petal:nth-child(5) { transform: rotate(240deg); }
+.petal:nth-child(6) { transform: rotate(300deg); }
+
+.center {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: orange;
+  border-radius: 50%;
+  top: 45px;
+  left: 45px;
+}
+
+/* Tallos */
+.stem {
+  position: absolute;
+  width: 14px;
+  height: 250px;
+  background: green;
+  bottom: -250px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  transform-origin: top center;
+}
+
+.stem-left {
+  transform: translateX(-50%) rotate(-20deg);
+}
+.stem-center {
+  transform: translateX(-50%) rotate(0deg);
+}
+.stem-right {
+  transform: translateX(-50%) rotate(20deg);
+}
+
+.heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  transform: rotate(-45deg);
+  bottom: 40px;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -15px;
+  left: 0;
+}
+
+.heart::after {
+  left: 15px;
+  top: 0;
+}
+
+.heart-left {
+  left: -40px;
+}
+
+.heart-right {
+  right: -40px;
+}
